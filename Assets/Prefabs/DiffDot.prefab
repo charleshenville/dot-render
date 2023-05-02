@@ -45,14 +45,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ca1a0d23a754a9c965623070331280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpha: -2
-  beta: 3
-  gamma: 0.78
-  delta: -2.09
-  amplitudeScaler: 0.0015
-  hueShifter: 0.008
-  hueOffset: 0.8
-  varienceSpeed: 0.01
+  simulationSpeed: 0.3
+  alpha: 3
+  beta: -2.6
+  gamma: -2.2
+  delta: 0.3
+  epsilon: 1.2
+  zeta: 3.4
+  amplitudeScaler: 0.002
+  velocityScaler: 0.6
+  frequencyScaler: 0.15
+  intricacy: 0.2
+  intricacyShift: 0.1
+  paramScaler: 0.5
+  hueShifter: 0.035
+  hueOffset: 1
+  resetCutoff: 0.001
+  averageSize: 0.0001
+  varienceSpeed: 0.04
+  minSize: 0.0005
 --- !u!212 &3270595123001876458
 SpriteRenderer:
   m_ObjectHideFlags: 0
