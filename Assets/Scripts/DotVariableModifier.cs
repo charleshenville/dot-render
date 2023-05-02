@@ -7,7 +7,6 @@ public class DotVariableModifier : MonoBehaviour
     public float checkInterval = 0.2f;
     public float seekerAC = 4;
     public float seekerACAlpha = 10;
-
     private DotBehaviour thisBehaviour;
     private DotBehaviour otherBehaviour;
     private float averageMoveSpeed;

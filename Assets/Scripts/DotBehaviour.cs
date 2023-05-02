@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DotBehaviour : MonoBehaviour
 {
-
     public float rotationSpeedMax = 4.0f;
     public float currentRotationZ;
     public Vector2 minBounds;
@@ -19,10 +18,8 @@ public class DotBehaviour : MonoBehaviour
     public float currentAcceleration;
     public float currentAlpha;
     public float currentRotationSpeed;
-
     private float a;
     private float phaseShift;
-
     private Rigidbody2D rb;
     private float timer;
     private float rTimer;
@@ -98,11 +95,10 @@ public class DotBehaviour : MonoBehaviour
 
     void ApplyAcceleration()
     {   
-
         currentRotationSpeed += currentAlpha * Time.fixedDeltaTime;
         currentRotationSpeed = Mathf.Min(rotationSpeedMax, currentRotationSpeed);
         currentRotationSpeed = Mathf.Max(-rotationSpeedMax, currentRotationSpeed);
-
+        
         moveSpeed += currentAcceleration * Time.fixedDeltaTime;
         moveSpeed = Mathf.Max(0.0f, moveSpeed);
         moveSpeed = Mathf.Min(maxSpeed, moveSpeed);
